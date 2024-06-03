@@ -1,0 +1,154 @@
+#==============================================================================
+#
+#	プレイヤーのセットアップ [player.txt]
+#	Author : you
+#
+#==============================================================================
+#------------------------------------------------------------------------------
+#	キャラクター情報
+#------------------------------------------------------------------------------
+CHARACTERSET
+
+	PARTSSET
+		INDEX = 0
+		PARENT = -1
+		POS = 0.0 32.4 0.0
+		ROT = 0.0 0.0 0.0
+		FILEPASS = data\MODEL\PLAYER\00_waist.x
+	END_PARTSSET
+	
+	PARTSSET
+		INDEX = 1
+		PARENT = 0
+		POS = -0.2 6.6 -0.0
+		ROT = 0.0 0.0 0.0
+		FILEPASS = data\MODEL\PLAYER\01_body.x
+	END_PARTSSET
+	
+	PARTSSET
+		INDEX = 2
+		PARENT = 1
+		POS = -0.1 19.8 -0.4
+		ROT = 0.0 0.0 0.0
+		FILEPASS = data\MODEL\PLAYER\02_head.x
+	END_PARTSSET
+	
+	PARTSSET
+		INDEX = 3
+		PARENT = 1
+		POS = -10.1 12.6 0.2
+		ROT = 0.0 0.0 0.0
+		FILEPASS = data\MODEL\PLAYER\03_armUL.x
+	END_PARTSSET
+	
+	PARTSSET
+		INDEX = 4
+		PARENT = 1
+		POS = 10.1 12.6 0.2
+		ROT = 0.0 0.0 0.0
+		FILEPASS = data\MODEL\PLAYER\04_armUR.x
+	END_PARTSSET
+	
+	PARTSSET
+		INDEX = 5
+		PARENT = 3
+		POS = -7.3 -0.2 0.1
+		ROT = 0.0 0.0 0.0
+		FILEPASS = data\MODEL\PLAYER\05_armDL.x
+	END_PARTSSET
+	
+	PARTSSET
+		INDEX = 6
+		PARENT = 4
+		POS = 7.3 -0.2 0.1
+		ROT = 0.0 0.0 0.0
+		FILEPASS = data\MODEL\PLAYER\06_armDR.x
+	END_PARTSSET
+	
+	PARTSSET
+		INDEX = 7
+		PARENT = 5
+		POS = -11.7 -0.1 -0.2
+		ROT = 0.0 0.0 0.0
+		FILEPASS = data\MODEL\PLAYER\07_handL.x
+	END_PARTSSET
+	
+	PARTSSET
+		INDEX = 8
+		PARENT = 6
+		POS = 11.7 -0.1 -0.2
+		ROT = 0.0 0.0 0.0
+		FILEPASS = data\MODEL\PLAYER\08_handR.x
+	END_PARTSSET
+	
+	PARTSSET
+		INDEX = 9
+		PARENT = 0
+		POS = -5.8 -5.3 0.0
+		ROT = 0.0 0.0 0.0
+		FILEPASS = data\MODEL\PLAYER\09_legUL.x
+	END_PARTSSET
+	
+	PARTSSET
+		INDEX = 10
+		PARENT = 0
+		POS = 5.8 -5.3 0.0
+		ROT = 0.0 0.0 0.0
+		FILEPASS = data\MODEL\PLAYER\10_legUR.x
+	END_PARTSSET
+	
+	PARTSSET
+		INDEX = 11
+		PARENT = 9
+		POS = -0.2 -8.8 0.4
+		ROT = 0.0 0.0 0.0
+		FILEPASS = data\MODEL\PLAYER\11_legDL.x
+	END_PARTSSET
+	
+	PARTSSET
+		INDEX = 12
+		PARENT = 10
+		POS = 0.2 -8.8 0.4
+		ROT = 0.0 0.0 0.0
+		FILEPASS = data\MODEL\PLAYER\12_legDR.x
+	END_PARTSSET
+	
+	PARTSSET
+		INDEX = 13
+		PARENT = 11
+		POS = 0.4 -7.7 -0.5
+		ROT = 0.0 0.0 0.0
+		FILEPASS = data\MODEL\PLAYER\13_footL.x
+	END_PARTSSET
+	
+	PARTSSET
+		INDEX = 14
+		PARENT = 12
+		POS = -0.4 -7.7 -0.5
+		ROT = 0.0 0.0 0.0
+		FILEPASS = data\MODEL\PLAYER\14_footR.x
+	END_PARTSSET
+	
+	PARTSSET
+		INDEX = 15
+		PARENT = 7
+		POS = -5.8 0.0 0.0
+		ROT = 0.0 0.0 0.0
+		FILEPASS = data\MODEL\PLAYER\15_sword.x
+	END_PARTSSET
+	
+	PARTSSET
+		INDEX = 16
+		PARENT = 8
+		POS = 5.8 0.0 0.0
+		ROT = 0.0 0.0 0.0
+		FILEPASS = data\MODEL\PLAYER\15_sword.x
+	END_PARTSSET
+	
+END_CHARACTERSET
+
+#------------------------------------------------------------------------------
+#	モーション情報
+#------------------------------------------------------------------------------
+MOTIONPASS = data\MOTION\PLAYER\idol.txt	# 待機モーション
+MOTIONPASS = data\MOTION\PLAYER\walk.txt	# 歩行モーション
